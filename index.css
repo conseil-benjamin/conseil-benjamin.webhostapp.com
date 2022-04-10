@@ -1,0 +1,323 @@
+h1 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  body {
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    background: #202731;
+    overflow-x: hidden;
+  }
+
+  section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding-top: 100px;
+  }
+
+  .blue {
+    background: #3c31dd;
+  }
+
+  .red {
+    background: #dd3f31;
+    height: 1900px;
+  }
+
+  .pink {
+    background: #ff0066;
+    overflow: hidden;
+    height: 900px;
+    margin-bottom: 100px;
+  }
+
+  .dark {
+    background: #0f0f10;
+  }
+
+  .curve {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+  }
+
+  .curve::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%, 60%);
+    background-color: hsl(216, 21%, 16%);
+  }
+
+  .curve::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #3c31dd;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+  }
+
+  .bubble::after {
+    content: '';
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    background-color: #0f0f10;
+    height: 85%;
+  }
+
+  .wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .wave svg {
+    position: relative;
+    display: block;
+    width: calc(103% + 1.3px);
+    height: 262px;
+  }
+
+  .wave .shape-fill {
+    fill: hsl(240, 3%, 6%);
+  }
+
+  .spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .layer1 {
+    background-image: url('./layer1.svg');
+  }
+  .layer2 {
+    background-image: url('./layer2.svg');
+  }
+
+  .flip {
+    transform: rotate(180deg);
+  }
+
+  .blob-motion {
+    position: absolute;
+    transform: translateY(-20%);
+    z-index: 0;
+  }
+
+  .blob-content {
+    z-index: 1;
+  }
+
+  .blobs {
+    width: 100%;
+    background: url('./blobs.svg') no-repeat bottom / cover;
+    height: 600px;
+  }
+
+  .h1_cb{
+    height: 600px;
+    position: relative; margin-top: 110px;
+    top: 50px;
+    font-weight: bold;
+  }
+
+  .h1_info{
+     font-weight: bold;
+  } 
+  
+
+  .h1_hobbies{
+      position: relative; top: 30px;
+      font-weight: bold;
+  }
+
+  .h1_projets{
+      position: relative; top: -100px; left: 0px; 
+      font-weight: bold;
+  }
+
+  .informatique{
+    margin-left: -60%;
+  }
+
+  .txtinformatique{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: white;
+   position: relative; top: -350px; left: 300px;
+   width: 1000px;
+   height: 100px;
+   font-size: 22px;
+  }
+
+  ::selection{
+    background-color: red;
+  }
+
+  ::target-text {
+   background-color: pink;
+ }
+
+ .sport{
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   position: relative; top: 30px; left: -550px;
+   text-align: left;
+   font-size: 30px;
+ }
+
+ .jeux_videos{
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   position: relative; top: -20px; left: 500px;
+   font-size: 30px;
+ }
+
+ .ul_sport{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: relative; top: 45px; left: -500px;
+  font-size: 19px;
+
+ }
+
+ .psport{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   position: relative; top: -1000px; left: -500px;
+   text-align: left;
+   font-size: 20px;
+ }
+
+ .img_judo{
+  position: relative; top: 0px; left: 400px;
+ }
+
+ .foot{
+  position: relative; top: 0px; left: 400px;
+ }
+ 
+ .muscu{
+  position: relative; top: 0px; left: 400px;
+ }
+
+.ul_jeux_videos{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: relative; top: -970px; left: 500px;
+  font-size: 19px;
+}
+
+.pjeux_videos{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   position: relative; top: -1075px; left: 500px;
+   text-align: left;
+   font-size: 20px;
+}
+
+.cinema{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   position: relative; top: -1000px; left: 0px;
+   font-size: 30px;
+}
+
+.ul_cinema{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: relative; top: -1000px; left: -10px;
+  font-size: 19px;
+}
+
+.filmpref{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: relative; top: -1050px; left: -10px;
+  font-size: 19px;
+}
+
+.python {
+  box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+  -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+     -ms-transition: all 0.2s;
+     -o-transition: all 0.2s;
+     transition: all 0.2s;
+     position: relative ; top: -80px; left: -600px;
+}
+
+.ul_python{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: relative; top: -400px; left: -120px;
+  font-size: 19px;
+}
+
+.img_quizz{
+  box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+  -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+     -ms-transition: all 0.2s;
+     -o-transition: all 0.2s;
+     transition: all 0.2s;
+}
+
+.img_quizz:hover {
+  border : 2px solid #000000;
+  transform:scale(1.3);
+}
+
+
+.footer-basic {
+  margin-top: -400px;
+  width: 100%;
+  padding:40px 0;
+  background-color:#282D32;
+  color:whitesmoke;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
